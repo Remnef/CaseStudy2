@@ -65,6 +65,10 @@ public class Main {
                                         System.out.println("\n\tAll bill is: ");
                                         System.out.println(line);
                                         System.out.println("\tYour bill is: "+bill);
+                                        do {
+                                            System.out.print("\t\tEnter 0 to back for do something ");
+                                            str = new Scanner(System.in).nextLine();
+                                        }while(!working.checkRegex(str,"([0])"));
                                     }
                                 } while (check.equals("Y"));
                                 break;
